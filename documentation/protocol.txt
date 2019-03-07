@@ -35,6 +35,6 @@ X bytes - Data being received, variable length depending on what is being sent.
 Therefore, a ?ping response might look like this:
 [\x00 \x83 \x00 \x05 \x2A \x00 \x00 \x29 \x43]
 
-In this instance, \x00\x05 is the UInt16 describing the length of the rest of the packet, includeing the type data. \x2A is indicating the remaining data will be a Float32. The \x29\x43 is the returned value from the ping operation, which by standard on Space Station 13 indicates the number of players online at the time of the request. In this case, it is 169.
+In this instance, \x00\x05 is the UInt16 describing the length of the rest of the packet, including the type data. \x2A is indicating the remaining data will be a Float32. The \x29\x43 is the returned value from the ping operation, which by standard on Space Station 13 indicates the number of players online at the time of the request. In this case, it is 169.
 
 In a standard array, bytes 0 and 1 can be ignored, bytes 2 and 3 indicate message length, byte 4 is the type, and all remaining bytes are the data.
